@@ -31,5 +31,10 @@ namespace DataSourceDemo
             this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
 
         }
+
+        private void customersBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }
