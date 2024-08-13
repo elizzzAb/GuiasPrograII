@@ -40,6 +40,7 @@
             System.Windows.Forms.Label countryLabel;
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label faxLabel;
+            System.Windows.Forms.Label label1;
             this.northwindDataSet = new DataSourceDemo.NorthwindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new DataSourceDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
@@ -67,6 +68,7 @@
             this.countryTextBox = new System.Windows.Forms.TextBox();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.faxTextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             companyNameLabel = new System.Windows.Forms.Label();
             contactNameLabel = new System.Windows.Forms.Label();
             contactTitleLabel = new System.Windows.Forms.Label();
@@ -77,6 +79,7 @@
             countryLabel = new System.Windows.Forms.Label();
             phoneLabel = new System.Windows.Forms.Label();
             faxLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
@@ -231,7 +234,7 @@
             // companyNameLabel
             // 
             companyNameLabel.AutoSize = true;
-            companyNameLabel.Location = new System.Drawing.Point(322, 114);
+            companyNameLabel.Location = new System.Drawing.Point(314, 115);
             companyNameLabel.Name = "companyNameLabel";
             companyNameLabel.Size = new System.Drawing.Size(85, 13);
             companyNameLabel.TabIndex = 3;
@@ -241,7 +244,7 @@
             // 
             this.companyNameTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.companyNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
-            this.companyNameTextBox.Location = new System.Drawing.Point(413, 111);
+            this.companyNameTextBox.Location = new System.Drawing.Point(405, 112);
             this.companyNameTextBox.Name = "companyNameTextBox";
             this.companyNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.companyNameTextBox.TabIndex = 4;
@@ -249,7 +252,7 @@
             // contactNameLabel
             // 
             contactNameLabel.AutoSize = true;
-            contactNameLabel.Location = new System.Drawing.Point(322, 140);
+            contactNameLabel.Location = new System.Drawing.Point(314, 141);
             contactNameLabel.Name = "contactNameLabel";
             contactNameLabel.Size = new System.Drawing.Size(78, 13);
             contactNameLabel.TabIndex = 5;
@@ -259,7 +262,7 @@
             // 
             this.contactNameTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.contactNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactName", true));
-            this.contactNameTextBox.Location = new System.Drawing.Point(413, 137);
+            this.contactNameTextBox.Location = new System.Drawing.Point(405, 138);
             this.contactNameTextBox.Name = "contactNameTextBox";
             this.contactNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactNameTextBox.TabIndex = 6;
@@ -267,7 +270,7 @@
             // contactTitleLabel
             // 
             contactTitleLabel.AutoSize = true;
-            contactTitleLabel.Location = new System.Drawing.Point(322, 166);
+            contactTitleLabel.Location = new System.Drawing.Point(314, 167);
             contactTitleLabel.Name = "contactTitleLabel";
             contactTitleLabel.Size = new System.Drawing.Size(70, 13);
             contactTitleLabel.TabIndex = 7;
@@ -277,7 +280,7 @@
             // 
             this.contactTitleTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.contactTitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactTitle", true));
-            this.contactTitleTextBox.Location = new System.Drawing.Point(413, 163);
+            this.contactTitleTextBox.Location = new System.Drawing.Point(405, 164);
             this.contactTitleTextBox.Name = "contactTitleTextBox";
             this.contactTitleTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactTitleTextBox.TabIndex = 8;
@@ -285,7 +288,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(322, 192);
+            addressLabel.Location = new System.Drawing.Point(314, 193);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new System.Drawing.Size(48, 13);
             addressLabel.TabIndex = 9;
@@ -295,7 +298,7 @@
             // 
             this.addressTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(413, 189);
+            this.addressTextBox.Location = new System.Drawing.Point(405, 190);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(100, 20);
             this.addressTextBox.TabIndex = 10;
@@ -303,7 +306,7 @@
             // cityLabel
             // 
             cityLabel.AutoSize = true;
-            cityLabel.Location = new System.Drawing.Point(322, 218);
+            cityLabel.Location = new System.Drawing.Point(314, 219);
             cityLabel.Name = "cityLabel";
             cityLabel.Size = new System.Drawing.Size(27, 13);
             cityLabel.TabIndex = 11;
@@ -313,7 +316,7 @@
             // 
             this.cityTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "City", true));
-            this.cityTextBox.Location = new System.Drawing.Point(413, 215);
+            this.cityTextBox.Location = new System.Drawing.Point(405, 216);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(100, 20);
             this.cityTextBox.TabIndex = 12;
@@ -321,7 +324,7 @@
             // regionLabel
             // 
             regionLabel.AutoSize = true;
-            regionLabel.Location = new System.Drawing.Point(322, 244);
+            regionLabel.Location = new System.Drawing.Point(314, 245);
             regionLabel.Name = "regionLabel";
             regionLabel.Size = new System.Drawing.Size(44, 13);
             regionLabel.TabIndex = 13;
@@ -331,7 +334,7 @@
             // 
             this.regionTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.regionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Region", true));
-            this.regionTextBox.Location = new System.Drawing.Point(413, 241);
+            this.regionTextBox.Location = new System.Drawing.Point(405, 242);
             this.regionTextBox.Name = "regionTextBox";
             this.regionTextBox.Size = new System.Drawing.Size(100, 20);
             this.regionTextBox.TabIndex = 14;
@@ -339,7 +342,7 @@
             // postalCodeLabel
             // 
             postalCodeLabel.AutoSize = true;
-            postalCodeLabel.Location = new System.Drawing.Point(322, 270);
+            postalCodeLabel.Location = new System.Drawing.Point(314, 271);
             postalCodeLabel.Name = "postalCodeLabel";
             postalCodeLabel.Size = new System.Drawing.Size(67, 13);
             postalCodeLabel.TabIndex = 15;
@@ -349,7 +352,7 @@
             // 
             this.postalCodeTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.postalCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "PostalCode", true));
-            this.postalCodeTextBox.Location = new System.Drawing.Point(413, 267);
+            this.postalCodeTextBox.Location = new System.Drawing.Point(405, 268);
             this.postalCodeTextBox.Name = "postalCodeTextBox";
             this.postalCodeTextBox.Size = new System.Drawing.Size(100, 20);
             this.postalCodeTextBox.TabIndex = 16;
@@ -357,7 +360,7 @@
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(322, 296);
+            countryLabel.Location = new System.Drawing.Point(314, 297);
             countryLabel.Name = "countryLabel";
             countryLabel.Size = new System.Drawing.Size(46, 13);
             countryLabel.TabIndex = 17;
@@ -367,7 +370,7 @@
             // 
             this.countryTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(413, 293);
+            this.countryTextBox.Location = new System.Drawing.Point(405, 294);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(100, 20);
             this.countryTextBox.TabIndex = 18;
@@ -375,7 +378,7 @@
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(322, 322);
+            phoneLabel.Location = new System.Drawing.Point(314, 323);
             phoneLabel.Name = "phoneLabel";
             phoneLabel.Size = new System.Drawing.Size(41, 13);
             phoneLabel.TabIndex = 19;
@@ -385,7 +388,7 @@
             // 
             this.phoneTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(413, 319);
+            this.phoneTextBox.Location = new System.Drawing.Point(405, 320);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.phoneTextBox.TabIndex = 20;
@@ -393,7 +396,7 @@
             // faxLabel
             // 
             faxLabel.AutoSize = true;
-            faxLabel.Location = new System.Drawing.Point(322, 348);
+            faxLabel.Location = new System.Drawing.Point(314, 349);
             faxLabel.Name = "faxLabel";
             faxLabel.Size = new System.Drawing.Size(27, 13);
             faxLabel.TabIndex = 21;
@@ -403,16 +406,36 @@
             // 
             this.faxTextBox.BackColor = System.Drawing.Color.LightGreen;
             this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Fax", true));
-            this.faxTextBox.Location = new System.Drawing.Point(413, 345);
+            this.faxTextBox.Location = new System.Drawing.Point(405, 346);
             this.faxTextBox.Name = "faxTextBox";
             this.faxTextBox.Size = new System.Drawing.Size(100, 20);
             this.faxTextBox.TabIndex = 22;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(314, 89);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(65, 13);
+            label1.TabIndex = 23;
+            label1.Text = "Customer ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CustomerID", true));
+            this.textBox1.Location = new System.Drawing.Point(405, 86);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 24;
             // 
             // ejemploConexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(companyNameLabel);
             this.Controls.Add(this.companyNameTextBox);
             this.Controls.Add(contactNameLabel);
@@ -476,5 +499,6 @@
         private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.TextBox faxTextBox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
