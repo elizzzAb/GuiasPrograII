@@ -36,5 +36,31 @@ namespace DataSourceDemo
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Llamamos al customerBindingSource y el método que queremos ejecutar
+            customersBindingSource.AddNew();
+        }
+
+        private void CajaTextoID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ( e.KeyChar == (char)13)
+            {
+                var index = customersBindingSource.Find("customersID", CajaTextoID);
+                //MessageBox.Show($"{index}");
+                //MessageBox.Show(index.ToString());
+                if (index > -1)
+                {
+                    customersBindingSource.Position = index;
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Elemento no encontrado.");
+                }
+            };
+        }
+
     }
 }
